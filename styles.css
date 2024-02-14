@@ -1,0 +1,152 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.panell{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #ffffff;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 30px;
+}
+
+.memory-next {
+    grid-column: 1;
+    grid-row: 2;
+
+    align-self: center;
+    justify-self: center;
+
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border: 1px solid #ccc;
+}
+
+.memory-game {
+    grid-column: 2;
+    grid-row: 2;
+    display: inline-block;
+}
+
+.memory-message {
+    grid-column: 3;
+    grid-row: 2;
+    align-self: center;
+    justify-self: center
+}
+
+.buttons{
+    grid-column: 2;
+    grid-row: 3;
+    align-self: center;
+    justify-self: center
+}
+
+.row {
+    display: flex;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+/* Colores pastel */
+.color1 {
+    background-color: #ffd1dc;
+}
+.color2 {
+    background-color: #ffecd1;
+}
+.color3 {
+    background-color: #d1ffea;
+}
+.color4 {
+    background-color: #e3d1ff;
+}
+.color5 {
+    background-color: #ffbf80;
+}
+.color6 {
+    background-color: #ffef96;
+}
+.color7 {
+    background-color: #aaff80;
+}
+.color8 {
+    background-color: #96ffe0;
+}
+.color9 {
+    background-color: #ff9cf0;
+}
+.color10 {
+    background-color: #d1c2ff;
+}
+.color11 {
+    background-color: #b2b2b2;
+}
+.color12 {
+    background-color: #99e6e6;
+}
+.color13 {
+    background-color: #d98cb3;
+}
+.color14 {
+    background-color: #d6ff80;
+}
+.color15 {
+    background-color: #ffe080;
+}
+.color16 {
+    background-color: #80ffbf;
+}
+
+
+ .button-3 {
+     cursor: pointer;
+     outline: 0;
+     color: #fff;
+     background-color: #0d6efd;
+     display: inline-block;
+     font-weight: 400;
+     line-height: 1.5;
+     text-align: center;
+     border: 1px solid transparent;
+     padding: 6px 12px;
+     font-size: 16px;
+     border-radius: .25rem;
+     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+     :hover {
+         color: #fff;
+         background-color: #0b5ed7;
+         border-color: #0a58ca;
+     }
+
+ }
