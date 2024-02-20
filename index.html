@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego de Memoria</title>
+    <title>Joc de memòria</title>
     <link rel="stylesheet" href="styles.css">
 
     <script src="script.js"></script>
@@ -11,42 +11,42 @@
 <body>
 
 <div class="panell">
-    <div class="header">Títol</div>
+    <div class="header">Preparat per jugar al memory?!</div>
     <div class="memory-next" id="notification">
     </div>
     <div class="memory-game">
         <div class="row">
-            <button class="card color1" id="bColor1"></button>
-            <button class="card color2"></button>
-            <button class="card color3"></button>
-            <button class="card color4"></button>
+            <button class="card color1" id="bColor1" onclick="colorBoto('#ffd1dc')"></button>
+            <button class="card color2" onclick="colorBoto('#ffecd1')"></button>
+            <button class="card color3" onclick="colorBoto('#d1ffea')"></button>
+            <button class="card color4" onclick="colorBoto('#e3d1ff')"></button>
         </div>
         <div class="row">
-            <button class="card color5"></button>
-            <button class="card color6"></button>
-            <button class="card color7"></button>
-            <button class="card color8"></button>
+            <button class="card color5" onclick="colorBoto('#ffbf80')"></button>
+            <button class="card color6" onclick="colorBoto('#ffef96')"></button>
+            <button class="card color7" onclick="colorBoto('#aaff80')"></button>
+            <button class="card color8" onclick="colorBoto('#96ffe0')"></button>
         </div>
         <div class="row">
-            <button class="card color9"></button>
-            <button class="card color10"></button>
-            <button class="card color11"></button>
-            <button class="card color12"></button>
+            <button class="card color9" onclick="colorBoto('#ff9cf0')"></button>
+            <button class="card color10" onclick="colorBoto('#d1c2ff')"></button>
+            <button class="card color11" onclick="colorBoto('#b2b2b2')"></button>
+            <button class="card color12" onclick="colorBoto('#99e6e6')"></button>
         </div>
         <div class="row">
-            <button class="card color13"></button>
-            <button class="card color14"></button>
-            <button class="card color15"></button>
-            <button class="card color16"></button>
+            <button class="card color13" onclick="colorBoto('#d98cb3')"></button>
+            <button class="card color14" onclick="colorBoto('#d6ff80')"></button>
+            <button class="card color15" onclick="colorBoto('#ffe080')"></button>
+            <button class="card color16" onclick="colorBoto('#80ffbf')"></button>
         </div>
 
     </div>
     <div class="memory-message" id="message">
-        Missatge
+        Pitja el botó començar i començarà una seqüència de colors, per guanyar hauràs de seguir-la pitjant cada color, els quals es troben als requadres.
     </div>
 
     <div class="buttons">
-        <button class="button-3" role="button"  onclick="showNotification('#b2b2b2')">Començar</button>
+        <button class="button-3" role="button"  onclick="nouNivell()">Començar</button>
     </div>
 
 
