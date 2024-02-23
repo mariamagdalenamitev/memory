@@ -1,18 +1,6 @@
 let colors = ['#ffd1dc','#ffecd1','#d1ffea','#e3d1ff','#ffbf80','#ffef96','#aaff80','#96ffe0','#ff9cf0','#d1c2ff','#b2b2b2','#99e6e6','#d98cb3','#d6ff80','#ffe080','#80ffbf']
 let symon = []
 
-/*function mostrarColors(){
-    for (let i = 0; i<colors.length; i++){
-        if (symon.charAt(i) === colors.charAt(i)){
-            console.log(colors.push(colors))
-        }
-    }
-}*/
-/*
-    Mostra la notificació al panell notification
-    Mostra el color hexadecimal passat per paràmetre
- */
-
 function showNotification(message) {
     console.log(message)
     var notification = document.getElementById('notification');
@@ -23,12 +11,12 @@ function showNotification(message) {
         notification.style.display = 'none';
     }, 2000);
 }
-//Afegir funció iniciar partida enviant el missatge. exemple:
 
+//Afegir funció iniciar partida enviant el missatge. exemple:
 
  async function nouNivell() {
     symon.push(colors[Math.trunc(Math.random()*colors.length)])
-
+     posicio= 0;
      for (let i = 0; i < symon.length; i++) {
          showNotification(symon[i])
          //Crida al mètode espera
@@ -45,8 +33,10 @@ function esperar(milliseconds){
 let posicio = 0
 function colorBoto(color){
     if (color == symon[posicio]) {
-        if (symon.length() == color){
-            nouNivell()
+        posicio++
+        console.log(posicio + "-"+ symon.length)
+        if (symon.length == posicio){
+            nouNivell();
         }
     }
     else {
