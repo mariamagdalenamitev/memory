@@ -18,31 +18,35 @@
         <div class="row">
             <button class="card color1" id="bColor1" onclick="colorBoto('#ffd1dc')"></button>
             <button class="card color2" onclick="colorBoto('#ffecd1')"></button>
-            <button class="card color3" onclick="colorBoto('#d1ffea')"></button>
+            <button class="card color3" onclick="colorBoto('#bdd7f6')"></button>
             <button class="card color4" onclick="colorBoto('#e3d1ff')"></button>
         </div>
         <div class="row">
             <button class="card color5" onclick="colorBoto('#ffbf80')"></button>
-            <button class="card color6" onclick="colorBoto('#ffef96')"></button>
+            <button class="card color6" onclick="colorBoto('#484014')"></button>
             <button class="card color7" onclick="colorBoto('#aaff80')"></button>
             <button class="card color8" onclick="colorBoto('#96ffe0')"></button>
         </div>
         <div class="row">
             <button class="card color9" onclick="colorBoto('#ff9cf0')"></button>
-            <button class="card color10" onclick="colorBoto('#d1c2ff')"></button>
+            <button class="card color10" onclick="colorBoto('#846dcc')"></button>
             <button class="card color11" onclick="colorBoto('#b2b2b2')"></button>
-            <button class="card color12" onclick="colorBoto('#99e6e6')"></button>
+            <button class="card color12" onclick="colorBoto('#00fdfd')"></button>
         </div>
         <div class="row">
             <button class="card color13" onclick="colorBoto('#d98cb3')"></button>
-            <button class="card color14" onclick="colorBoto('#d6ff80')"></button>
+            <button class="card color14" onclick="colorBoto('#d6f594')"></button>
             <button class="card color15" onclick="colorBoto('#ffe080')"></button>
-            <button class="card color16" onclick="colorBoto('#80ffbf')"></button>
+            <button class="card color16" onclick="colorBoto('#01fd82')"></button>
         </div>
 
     </div>
     <div class="memory-message" id="message">
         Pitja el botó començar i començarà una seqüència de colors, per guanyar hauràs de seguir-la pitjant cada color, els quals es troben als requadres.
+        <label class="switchBtn">
+            <input type="checkbox">
+            <div class="slide round">Tots</div>
+        </label>
     </div>
 
     <div class="buttons">
@@ -51,7 +55,10 @@
 </div>
 <div class="slidecontainer">
     <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
 </div>
+
+
 
 </body>
 </html>
