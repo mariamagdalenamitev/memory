@@ -11,7 +11,7 @@
 <body>
 
 <div class="panell">
-    <div class="header">Preparat per jugar al memory?!</div>
+    <div class="header">Preparat per jugar al memory?</div>
     <div class="memory-next" id="notification">
     </div>
     <div class="memory-game">
@@ -43,21 +43,23 @@
     </div>
     <div class="memory-message" id="message">
         Pitja el botó començar i començarà una seqüència de colors, per guanyar hauràs de seguir-la pitjant cada color, els quals es troben als requadres.
-        <label class="switchBtn">
-            <input type="checkbox">
-            <div class="slide round">Tots</div>
-        </label>
+        <div class="slidecontainer">
+            <input type="range" min="100" max="3000" value="1000" class="slider" id="myRange">
+            <p>Velocitat: <span id="demo"></span></p>
+        </div>
+        <div>
+            <label class="switchBtn">
+                <input type="checkbox">
+                <div class="slide round">Tots</div>
+            </label>
+        </div>
     </div>
 
     <div class="buttons">
         <button class="button-3" role="button"  onclick="nouNivell()">Començar</button>
     </div>
-</div>
-<div class="slidecontainer">
-    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
-    <p>Value: <span id="demo"></span></p>
-</div>
 
+</div>
 
 
 </body>
