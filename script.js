@@ -9,7 +9,7 @@ function showNotification(message) {
 
     setTimeout(function() {
         notification.style.display = 'none';
-    }, document.getElementById("myRange").value);
+    }, parseInt(document.getElementById("myRange").value));
 }
 
 //Afegir funció iniciar partida enviant el missatge. exemple:
@@ -20,7 +20,7 @@ function showNotification(message) {
      for (let i = 0; i < symon.length; i++) {
          showNotification(symon[i])
          //Crida al mètode espera
-         await esperar(document.getElementById("myRange").value+500)
+         await esperar(parseInt(document.getElementById("myRange").value)+500)
      }
 }
 
@@ -35,6 +35,7 @@ function colorBoto(color){
     if (color == symon[posicio]) {
         posicio++
         console.log(posicio + "-"+ symon.length)
+        console.log(symon)
         if (symon.length == posicio){
             nouNivell();
         }
@@ -52,3 +53,12 @@ output.innerHTML = slider.value; // Display the default slider value
 slider.oninput = function() {
     output.innerHTML = this.value;
 }
+
+let intents = 0
+function nivells () {
+    if (symon.length == posicio) {
+        intents++
+        window.alert("Has completat"+intents+"nivells en total")
+    }
+}
+//Revisar intents
