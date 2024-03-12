@@ -44,23 +44,18 @@
     <div class="memory-message" id="message">
         Pitja el botó començar i començarà una seqüència de colors, per guanyar hauràs de seguir-la pitjant cada color, els quals es troben als requadres.
         <div class="slidecontainer">
-            <input type="range" min="100" max="3000" value="1000" class="slider" id="myRange">
+        <!--Slider per canviar la velocitat-->
             <p>Velocitat: <span id="demo"></span></p>
-        </div>
-        <div>
-            <label class="switchBtn">
-                <input type="checkbox">
-                <div class="slide round">Tots</div>
-            </label>
+            <input type="range" min="100" max="3000" value="1000" class="slider" id="myRange">
         </div>
     </div>
 
     <div class="buttons">
         <button class="button-3" role="button"  onclick="nouNivell()">Començar</button>
+        <button class="score-button" onclick="nivells()">Nivells completats </button>
     </div>
 </div>
 
-<button class="score-button" onclick="nivells()">Nivells completats </button>
 
 </body>
 </html>

@@ -1,7 +1,6 @@
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
 }
@@ -20,7 +19,7 @@ body {
     justify-self: center;
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: #602b51;
     color: #ffffff;
     bottom: 0;
     left: 0;
@@ -129,7 +128,7 @@ body {
 }
 
 
- .button-3 {
+.button-3 {
      cursor: pointer;
      outline: 0;
      color: #fff;
@@ -149,55 +148,26 @@ body {
          border-color: #0a58ca;
      }
 
- }
+}
 
-.switchBtn {
-    position: relative;
-    display: inline-block;
-    width: 110px;
-    height: 34px;
-}
-.switchBtn input {display:none;}
-.slide {
-    position: absolute;
+.score-button{
     cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    padding: 8px;
+    outline: 0;
     color: #fff;
-}
-.slide:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 78px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-input:checked + .slide {
-    background-color: #8CE196;
-    padding-left: 40px;
-}
-input:focus + .slide {
-    box-shadow: 0 0 1px #01aeed;
-}
-input:checked + .slide:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-    left: -20px;
-}
-.slide.round {
-    border-radius: 34px;
-}
-.slide.round:before {
-    border-radius: 50%;
+    background-color: #0d6efd;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    border: 1px solid transparent;
+    padding: 6px 12px;
+    font-size: 16px;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    :hover {
+        color: #fff;
+        background-color: #0b5ed7;
+        border-color: #0a58ca;
+    }
+
 }

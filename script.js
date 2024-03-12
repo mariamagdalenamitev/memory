@@ -54,11 +54,7 @@ slider.oninput = function() {
     output.innerHTML = this.value;
 }
 
-let intents = 0
 function nivells () {
-    if (symon.length == posicio) {
-        intents++
-        window.alert("Has completat"+intents+"nivells en total")
-    }
+        window.alert("Has completat "+symon.length+" nivells en total")
 }
 //Revisar intents
