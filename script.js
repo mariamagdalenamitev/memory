@@ -57,4 +57,3 @@ slider.oninput = function() {
 function nivells () {
         window.alert("Has completat "+symon.length+" nivells en total")
 }
-//Revisar intents
